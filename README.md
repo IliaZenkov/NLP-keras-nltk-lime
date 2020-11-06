@@ -16,26 +16,40 @@ The point of this notebook is to serve as an intro to NLP to get direction for w
 The steps I've taken here constitute a good baseline to get started on an NLP project, though by no means are they comprehensive. 
 
 # Table of Contents:
-- [Intro](#Intro)
-- [The Dataset](#The-Dataset)
-  - [Inspecting and Cleansing the Dataset](#Inspecting-and-Cleansing-the-Dataset)
-  - [Tokenization](#Tokenization)
-- [Text Embeddings](#Text-Embeddings)
-  - [Bag of Words](#Bag-of-Words)
-  - [Visualizing the Embeddings with LSA](#Visualizing-the-Embeddings-with-LSA)
-- [Fitting a Classifier for Baseline Performance](#Fitting-a-Classifier-for-Baseline-Performance)
-  - [Evaluation](#Evaluation)
-  - [Inspection](#Inspection)
-  - [Interpretability](#Interpretability)
-- [TF-IDF Bag of Words](#TF-IDF-Bag-of-Words)
-- [Understanding Semantic Meaning](#Understanding-Semantic-Meaning)
-  - [Word2Vec](#Word2Vec)
-- [Intepretability with LIME](#Intepretability-with-LIME)
-- [Using CNNs for Text Classification](#Using-CNNs-for-Text-Classification)
-  - [Preprocessing - Padding and One-Hot Encoding](#Preprocessing-Padding-and-One-Hot-Encoding)
-  - [1D Word2Vec CNN](#1D-Word2Vec-CNN)
-- [Take-Away](#Take-Away)
+- [Intro](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Intro)
+- [The Dataset](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#The-Dataset)
+  - [Inspecting and Cleansing the Dataset](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Inspecting-and-Cleansing-the-Dataset)
+  - [Tokenization](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Tokenization)
+- [Text Embeddings](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Text-Embeddings)
+  - [Bag of Words](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Bag-of-Words)
+  - [Visualizing the Embeddings with LSA](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Visualizing-the-Embeddings-with-LSA)
+- [Fitting a Classifier for Baseline Performance](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Fitting-a-Classifier-for-Baseline-Performance)
+  - [Evaluation](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Evaluation)
+  - [Inspection](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Inspection)
+  - [Interpretability](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Interpretability)
+- [TF-IDF Bag of Words](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#TF-IDF-Bag-of-Words)
+- [Understanding Semantic Meaning](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Understanding-Semantic-Meaning)
+  - [Word2Vec](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Word2Vec)
+- [Intepretability with LIME](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Intepretability-with-LIME)
+- [Using CNNs for Text Classification](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Using-CNNs-for-Text-Classification)
+  - [Preprocessing - Padding and One-Hot Encoding](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Preprocessing:-Padding-and-One-Hot-Encoding)
+  - [1D Word2Vec CNN](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#1D-Word2Vec-CNN)
+- [Take-Away](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb#Take-Away)
+
+## Cite
+If you find this work useful in your own research, please cite as follows:
+
+```
+@misc{Zenkov-NLP-basics,
+  author = {Zenkov, Ilia},
+  title = {NLP-basics-keras-nltk-lime},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/IliaZenkov/NLP-basics-keras-nltk-lime}},
+}
+```
 
 ## Licence
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/IliaZenkov/transformer-cnn-emotion-recognition/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/LICENSE)
