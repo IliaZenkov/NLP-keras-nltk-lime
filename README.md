@@ -32,7 +32,7 @@ The steps I've taken here constitute a good baseline to get started on an NLP pr
   - [Word2Vec](#Word2Vec)
 - [Intepretability with LIME](#Intepretability-with-LIME)
 - [Using CNNs for Text Classification](#Using-CNNs-for-Text-Classification)
-  - [Preprocessing - Padding and One-Hot Encoding](#Preprocessing:-Padding-and-One-Hot-Encoding)
+  - [Preprocessing - Padding and One-Hot Encoding](#Preprocessing-Padding-and-One-Hot-Encoding)
   - [1D Word2Vec CNN](#1D-Word2Vec-CNN)
 - [Take-Away](#Take-Away)
 
