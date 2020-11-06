@@ -35,3 +35,7 @@ The steps I've taken here constitute a good baseline to get started on an NLP pr
   - [Preprocessing: Padding and One-Hot Encoding](#Preprocessing:-Padding-and-One-Hot-Encoding)
   - [1D Word2Vec CNN](#1D-Word2Vec-CNN)
 - [Take-Away](#Take-Away)
+
+## Licence
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/IliaZenkov/transformer-cnn-emotion-recognition/blob/main/LICENSE)
