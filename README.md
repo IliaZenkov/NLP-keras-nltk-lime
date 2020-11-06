@@ -1,5 +1,5 @@
 # NLP Quick Start
-## [See Notebook for Code and Walkthrough](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-basics-keras-nltk-lime/blob/main/NLP_basics_keras_nltk_lime.ipynb)
+## [See Notebook for Code and Walkthrough](https://nbviewer.jupyter.org/github/IliaZenkov/NLP-keras-nltk-lime/blob/main/NLP_keras_nltk_lime.ipynb)
 
 There are a wealth of fancy NLP algorithms available today - particularly using transformers, which has overshadowed a lot of the basics of NLP such as clustering and classification. However, simple algorithms are much easier to scale and often provide an excellent basis before building more complicated models.
 
